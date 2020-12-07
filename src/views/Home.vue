@@ -1,48 +1,37 @@
 <template>
-  <div>
+  <v-card class="overflow-hidden">
     <v-app-bar
-      color="deep-purple accent-4"
-      dense
+      color="#4DB6AC"
       dark
+      shrink-on-scroll
+      src="@/assets/upacara.jpg"
+      fade-img-on-scroll
+      scroll-target="#scrolling-techniques-3"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <template v-slot:img="{ props }">
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+        ></v-img>
+      </template>
 
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-toolbar-title>PPP Nurul Ummahat</v-toolbar-title>
 
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-menu
-        left
-        bottom
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            icon
-            v-bind="attrs"
-            v-on="on"
-          >
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="n in 5"
-            :key="n"
-            @click="() => {}"
-          >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
+      <template v-slot:extension>
+        <v-tabs align-with-title>
+          <v-tab>Beranda</v-tab>
+          <v-tab>Profil</v-tab>
+          <v-tab>Santri</v-tab>
+          <v-tab>Alumni</v-tab>
+        </v-tabs>
+      </template>
     </v-app-bar>
-  </div>
+    <v-sheet
+      id="scrolling-techniques-3"
+      class="overflow-y-auto"
+      max-height="600"
+    >
+      <v-container style="height: 1000px;"></v-container>
+    </v-sheet>
+  </v-card>
 </template>
