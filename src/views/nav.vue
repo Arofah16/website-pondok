@@ -3,7 +3,6 @@
         <navbar/>
         <mainn/>
         <foot/>
-
     </div>
 </template>
 <script>
