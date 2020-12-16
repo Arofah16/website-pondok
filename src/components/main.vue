@@ -1,11 +1,47 @@
 <template>
-  <v-main>
-  
-    <!-- Provides the application the proper gutter -->
-    <v-container fluid>
+  <v-row>
+    <v-col cols="8">
+      <v-carousel cycle height="400" hide-delimiter-background show-arrows-on-hover>
+        <v-carousel-item v-for="(slide, i) in slides" :key="i">
+          <v-sheet :color="colors[i]" height="100%">
+            <v-row class="fill-height" align="center" justify="center">
+              <div class="display-3">
+                {{ slide }} Slide
+              </div>
+            </v-row>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
+    </v-col>
+    <v-col cols="4">
+      <v-card>
+        <v-card-title>
+          Pondok Pesantren Nurul Ummahat
+        </v-card-title>
 
-      <!-- If using vue-router -->
-      <router-view></router-view>
-    </v-container>
-  </v-main>
+      </v-card>
+    </v-col>
+  </v-row>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        colors: [
+          'indigo',
+          'warning',
+          'pink darken-2',
+          'red lighten-1',
+          'deep-purple accent-4',
+        ],
+        slides: [
+          'First',
+          'Second',
+          'Third',
+          'Fourth',
+          'Fifth',
+        ],
+      }
+    }
+  }
+</script>
