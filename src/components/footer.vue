@@ -1,9 +1,9 @@
 <template>
-  <!-- <v-footer dark padless> -->
-      <v-card-text class="center">
-        {{ new Date().getFullYear() }} — <strong>ppp nurul ummahat</strong>
-      </v-card-text>
-  <!-- </v-footer> -->
+  <v-footer color="teal darken-4">
+    <v-col class="text-center" cols="12">
+      {{ new Date().getFullYear() }} — <strong>PPP Nurul Ummahat</strong>
+    </v-col>
+  </v-footer>
 </template>
 <script>
   export default {
