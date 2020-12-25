@@ -1,15 +1,17 @@
 <template>
     <v-app>
-        <!-- <Nav/> -->
+        <!-- <Footer /> -->
         <router-view></router-view>
     </v-app>
 </template>
 
 <script>
-    // import Nav from '@/views/nav.vue';
+    // import Footer from '@/views/Footer.vue'
 
     export default {
-        // components: { Nav }
+        components: {
+            // Footer
+        }
     }
 
 </script>

@@ -26,11 +26,11 @@
           Santri
         </v-btn>
 
-        <v-btn text>
+        <v-btn text >
           Alumni
         </v-btn>
 
-        <v-btn text>
+        <v-btn text link to="/artikel">
           Artikel
         </v-btn>
 
