@@ -1,5 +1,8 @@
 <template>
-  <v-row>
+  <v-main>
+    <router-view></router-view> 
+  </v-main>
+  <!-- <v-row>
     <v-col cols="8">
       <v-carousel  class="pa-3">
         <v-carousel-item
@@ -19,27 +22,27 @@
 
       </v-card>
     </v-col>
-  </v-row>
+  </v-row> -->
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
-        ],
-      }
-    }
-  }
+  // export default {
+  //   data() {
+  //     return {
+  //       items: [
+  //         {
+  //           src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+  //         },
+  //         {
+  //           src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+  //         },
+  //         {
+  //           src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+  //         },
+  //         {
+  //           src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+  //         },
+  //       ],
+  //     }
+  //   }
+  // }
 </script>

@@ -14,7 +14,7 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn text>
+        <v-btn text link to="/">
           Beranda
         </v-btn>
 
