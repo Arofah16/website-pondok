@@ -1,14 +1,15 @@
 <template>
   <v-row>
     <v-col cols="8">
-      <v-carousel  class="pa-3">
-        <v-carousel-item
-          v-for="(item,i) in items"
-          :key="i"
-          :src="item.src"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
-        ></v-carousel-item>
+      <v-carousel class="pa-3" cycle>
+        <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade-transition"
+          transition="fade-transition">
+          <v-sheet :jud="judul[i]">
+            <v-row class="fill-bottom" align="center" justify="center">
+              <div>{{judul.note}} </div>
+            </v-row>
+          </v-sheet>
+        </v-carousel-item>
       </v-carousel>
     </v-col>
     <v-col cols="4">
@@ -27,19 +28,27 @@
       return {
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: require('@/assets/1.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: require('@/assets/upacara.jpg'),
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src: require('@/assets/pakkyai.jpg'),
+          },
+        ],
+        judul: [
+          {
+            note:'Pentas Seni Peringatan Hari Ulang Tahun Republik Indonesia ke-76' ,
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            note:'Bapak Kyai Muhaimin memimpin upacara Peringatan HUT RI Ke-76',
+          },
+          {
+            note:'Sarasehan Kuliah di Tiongkok',
           },
         ],
       }
-    }
+    },
   }
 </script>
