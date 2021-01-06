@@ -12,11 +12,14 @@
         </v-carousel-item>
       </v-carousel>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="4" ml="5">
       <v-card>
         <v-card-title>
           Pondok Pesantren Nurul Ummahat
         </v-card-title>
+        <v-card-subtitle>
+          Pondok Pesantren Putri yang mempunyai visi misi Modern, Moderat, Manusiawi
+        </v-card-subtitle>
 
       </v-card>
     </v-col>
