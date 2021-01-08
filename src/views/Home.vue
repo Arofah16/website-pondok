@@ -12,15 +12,24 @@
         </v-carousel-item>
       </v-carousel>
     </v-col>
-    <v-col cols="4" ml="5">
-      <v-card>
-        <v-card-title>
+    <v-col cols="4" >
+      <v-card class="mx-auto">
+        <!-- <v-card-title>
           Pondok Pesantren Nurul Ummahat
         </v-card-title>
         <v-card-subtitle>
           Pondok Pesantren Putri yang mempunyai visi misi Modern, Moderat, Manusiawi
         </v-card-subtitle>
-
+        <v-card-subtitle>
+        </v-card-subtitle> -->
+        <v-row>
+          <v-col cols="6">
+            <v-img src="@/assets/nuhat-semaan.jpeg"></v-img>
+          </v-col>
+          <v-col>
+            Ponpes Nurul Ummahat Ajarkan Keberagaman ,hafal Al Quran dan berprestasi Di Kampus 
+          </v-col>
+        </v-row>
       </v-card>
     </v-col>
   </v-row>

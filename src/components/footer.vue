@@ -1,6 +1,7 @@
 <template>
-  <v-footer color="teal darken-4" padless>
-    <v-row justify="center">
+  <v-footer color="teal darken-4" padless >
+    <v-row justify="center" class="flex"
+    >
       <v-col>
         <v-btn v-for="icon in icons" :key="icon" class="white--text" icon>
           <v-icon size="24px">
