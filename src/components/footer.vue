@@ -12,7 +12,7 @@
     </v-row>
     <v-row>
       <v-col class="white--text">
-        <h4>Tenang Kami</h4><br>
+        <h4>Tentang Kami</h4><br>
         <h5>Pondok Pesantren Putri Nurul Ummahat adalah Pondok khusus perempuan yang ada di Kotagede </h5>
       </v-col>
       <v-col class="white--text">
