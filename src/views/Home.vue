@@ -1,7 +1,7 @@
 <template>
   <v-row>
-    <v-col cols="8" class="ml-1">
-      <v-carousel cycle>
+    <v-col cols="8">
+      <v-carousel cycle class="ml-1">
         <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade-transition"
           transition="fade-transition">
           <v-sheet :jud="judul[i]">
@@ -12,7 +12,7 @@
         </v-carousel-item>
       </v-carousel>
     </v-col>
-    <v-col cols="3">
+    <v-col cols="4">
       <v-card class="mx-auto">
         <!-- <v-card-title>
           Pondok Pesantren Nurul Ummahat
@@ -34,6 +34,15 @@
         <v-row>
           <v-col cols="6">
             <v-img src="@/assets/1.jpg"></v-img>
+          </v-col>
+          <v-col>
+            Pondok Pesantren Nurul Ummahat Menerima Santri dari Berbagai macam kalangan
+            <v-btn depresses color="teal lighten-3" class="mt-5">Lihat Selengkapnya</v-btn>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="6">
+            <v-img src="@/assets/nuhat-semaan.jpeg"></v-img>
           </v-col>
           <v-col>
             Pondok Pesantren Nurul Ummahat Menerima Santri dari Berbagai macam kalangan

@@ -18,7 +18,7 @@
           Beranda
         </v-btn>
 
-        <v-btn text>
+        <v-btn text link to="Profil">
           Profil
         </v-btn>
 
